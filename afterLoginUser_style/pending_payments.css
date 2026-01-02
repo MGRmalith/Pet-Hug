@@ -1,0 +1,67 @@
+body{
+    background-color: #e0f7ff;
+}
+
+/* Container for pending payment details */
+.pending_payment {
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pending_payment h1 {
+    text-align: center;
+    color: #1d3272;
+    font-size: 1.8em;
+    margin-bottom: 50px;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    color: #333;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for the "No Data" message */
+.no-data {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .pending_payment {
+        width: 90%;
+    }
+
+    table, th, td {
+        font-size: 0.9em;
+    }
+}
