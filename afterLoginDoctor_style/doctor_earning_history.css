@@ -1,0 +1,146 @@
+body{
+    background-color: #e0f7ff;
+    margin-bottom: 0px;
+}
+
+.container_earnings {
+    width: 85%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.container_earnings h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+form label {
+    font-size: 14px;
+    color: #555;
+    margin-right: 15px;
+}
+
+form select {
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #555;
+    background-color: #f9f9f9;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling for Earnings Data */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: bold;
+}
+
+table td {
+    color: #555;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Table1 Styling */
+.table1 {
+    width: 60%;
+    margin: 0 auto 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Table2 Styling */
+.table2 {
+    margin: 60px auto;
+}
+
+.table2 h3 {
+    text-align: center;
+    font-size: 16pt;
+    margin-bottom: 10px;
+}
+
+.table2 th {
+    background-color: #7fabd1;
+}
+
+/* No Data Message */
+.container_earnings p {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form select,
+    form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
