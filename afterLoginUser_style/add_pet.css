@@ -1,0 +1,106 @@
+body{
+    background-color: #e0f7ff;
+}
+
+/* Main container */
+#main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styling */
+#main h2 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+/* Form labels */
+#main label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form input fields */
+#main input[type="text"], select, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit button*/
+#submit {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;   
+}
+
+#cancel {
+    margin-top: 20px; 
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Hover effect for submit button,cancel */
+#submit:hover{
+    background-color: #0056b3;
+}
+
+/* Error and success message styling */
+#error-message, #success-message {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#success-message {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Form layout improvements for smaller screens */
+@media (max-width: 600px) {
+    #main {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"], select, input[type="file"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #submit {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
