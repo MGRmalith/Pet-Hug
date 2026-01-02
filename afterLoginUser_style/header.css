@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    
+
+    
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:   #6666ff ;
+    padding: 5px 5% 5px 0;
+    height: 130px;
+}
+
+#logo{
+    display: flex;
+    justify-content: left;
+    width: auto;
+    max-width: 200px; 
+    flex-shrink: 0;
+    margin-left: 5%;
+}
+
+#logo img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:white;
+    font-weight:700;
+}
+
+
+.nav-links a:hover{
+    color:    #03045e;
+}
+
+.nav-links a.active {
+    color:   #03045e !important; 
+    font-weight: 700; 
+}
+
+.nav-links i{
+    font-size: 30px; color: white; background-color: #6666ff
+}
+.nav-links i:hover{
+    color:    #03045e;
+}
+
+.nav-links button{
+    border: none;
+}
+
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: #6666ff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 1000;
+    color: black;
+}
+
+.popup.active {
+    display: block;
+}
+
+/* Hamburger Menu (mobile) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* For smaller screens */
+@media (max-width: 1100px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;  /* Initially hidden */
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8); 
+        position: absolute;  /* Position below the header */
+        top: 60px;  /* Adjust based on header height */
+        left: 0;
+        z-index: 1000; /* Make sure it's above other content */
+        padding: 0;
+        margin: 0;
+        transition: max-height 0.3s ease-out, opacity 0.3s ease-out;  /* Add transition for smooth effect */
+        max-height: 0;  /* Initially collapsed */
+        opacity: 0;  /* Initially invisible */
+        gap: 2px;
+    }
+
+    @media (max-width: 600px) {  /* For even smaller screens */
+        .nav-links {
+            gap: 2px;  /* Reduced gap for smaller screens */
+        }
+    }
+
+    /* Show when 'active' class is added */
+    .nav-links.active {
+        padding: 0;
+        margin: 0;
+        display: flex;  /* Change to flex when active */
+        max-height: 500px;  /* Set max-height to show the full menu */
+        opacity: 1;  /* Make it visible */
+        background-color: rgba(255, 255, 255, 0.7); /* Ensure the background stays transparent */
+    }
+
+    .nav-links li {
+        text-align: right;
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: #333; /* Customize link color */
+    }
+}
