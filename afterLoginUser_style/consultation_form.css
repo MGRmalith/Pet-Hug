@@ -1,0 +1,160 @@
+body{
+    background-color: #e0f7ff;
+}
+
+.title{
+    margin: 3% auto 4%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: rgb(17, 15, 111);
+}
+
+/* Container */
+.consult-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Text */
+.section-text {
+    margin-left: 20px;
+    width: 50%; /* Adjust width as needed */
+    padding-right: 50px;
+}
+
+.section-text h2 {
+    color: #3c7eff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.section-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.section-text ul {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.section-text ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.section-text ul li::before {
+    content: '✔';
+    color: #3c7eff;
+    margin-right: 8px;
+}
+
+/* Consultation Form */
+.consultation-form {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #f9fafc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.consultation-form h3 {
+    font-size: 1.6em;
+    color: #3c7eff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form select,
+form textarea {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form input[type="time"]:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #3c7eff;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button */
+button.btn {
+    background-color: #3c7eff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+button.btn:hover {
+    background-color: #2b63cc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button.btn:active {
+    background-color: #224fa8;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+    .consult-container {
+        flex-direction: column;
+    }
+
+    .section-text,
+    .consultation-form {
+        width: 100%; /* Full width on smaller screens */
+        padding: 0;
+    }
+
+    .section-text {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
