@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7ff;
+    margin: 0;
+}
+   
+.container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about,.about2,.about3{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%; /* Adjusted to 100% to make use of .about's 95% width */
+    position: relative;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.about h2 {
+    position: absolute;
+    top: 3vh; /* Position h2 slightly from the top */
+    font-size: 40px; 
+    color: #007bff;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.about p {
+    position: absolute;
+    top: 10vh; /* Position p below h2 */
+    color: #171717;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 60%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.card:hover {
+     transform: scale(1.1); /* Scale up by 10% */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Adding a larger shadow for a "pop" effect */
+}
+.card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+.card h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.about2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%; /* Adjusted to 100% to make use of .about's 95% width */
+    position: relative;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.about2 h2 {
+    position: absolute;
+    top: 3vh; /* Position h2 slightly from the top */
+    font-size: 40px; 
+    color: #007bff;
+    margin: auto;
+}
+
+.about2 p {
+    position: absolute;
+    top: 10vh; /* Position p below h2 */
+    color: #545454;
+    font-size: 20px;
+}
+
+.about3 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 100%; /* Adjusted to 100% to make use of .about's 95% width */
+    position: relative;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.about3 h2 {
+    position: absolute;
+    top: 5vh; /* Position h2 slightly from the top */
+    font-size: 40px; 
+    color: #007bff;
+    margin: auto;
+    margin-left: 10px;
+}
+
+.about3 p {
+    position: absolute;
+    top: 12vh; /* Position p below h2 */
+    color: #545454;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 60%;
+}
