@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e0f7ff;
+}
+
+.credit_card_container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    height: 100vh;
+    padding: 20px;
+}
+
+form {
+    background-color: #fff;
+    margin: auto;
+    border-radius: 8px;
+    padding: 35px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    margin-bottom: 20px;
+    background-color: #007bff;
+    border-radius: 3px;
+}
+
+.title h1 {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.title p {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+/* Container for input with icon */
+.input-icon {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Style the input to have padding on the left for the icon */
+.input-icon input[type="text"] {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* extra left padding for the icon */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Position the icon inside the input field */
+.input-icon .fa-credit-card {
+    position: absolute;
+    top: 30%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+
+/* Two-column layout for Expiration Date and CVV */
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.row input[type="text"] {
+    flex: 1;
+}
+
+/* Submit button styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #065cb9; 
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #243699;
+}
+
+button:active {
+    background-color: #215388;
+}
+
+.error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
